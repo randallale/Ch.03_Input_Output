@@ -14,11 +14,13 @@ Sem Grade: 72   Final Exam: 100   Exam worth: 20%    Overall: 77.6
 '''
 
 print("What's your current semester grade?")
-current = int(input())/100
+current = int(input())
 print("What was the final exam grade?")
-final_grade = int(input())/100
+final_grade = int(input())
 print("What was the final's weight")
-weight = int(input())/100
+weight = int(input())
 
-overall = (current*(100-final_grade))/weight
-print(overall)
+overall = (100-weight)*current+(weight*final_grade)
+overall = overall/100
+print("You got a ", end= str(overall))
+print('%')
