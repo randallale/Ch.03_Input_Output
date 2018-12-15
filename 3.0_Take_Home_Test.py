@@ -103,14 +103,19 @@ print(pi*a*b)
 the pressure of a gas. PV=nRT where n is the number of moles, T is the absolute temperature, V is the
 volume, and R is the gas constant 8.3144.
 '''
-
+n = int(input("What's are the moles?"))
+r = 8.3144
+t = int(input("What's the absolute temperature?"))
+v = int(input("What's the volume?"))
+p = (n*r*t)/v
+print(p)
 
 '''
 13. Explain the mistake in this code:
 
 pi = float(3.14)
 '''
-
+# you don't need the float because it would already be an integer
 
 
 '''
@@ -120,7 +125,7 @@ x=3.14
 pi=x
 area=pi*radius**2
 '''
-
+# you should just do pi = 3.14 instead of the whole x thing
 
 '''
 Assuming x and y are already defined, this code runs. But
@@ -128,12 +133,12 @@ something isn't quite right. Explain the mistake in the following code:
 
 a=((x)*(y))
 '''
-
+# You should just do a=(x*y) there is no need for the extra set of () beside the variables
 
 '''
 16. Explain the mistake in the following code:
 
 radius = input(float("Enter the radius:"))
 '''
-
+# the float and the input should be switched around
 
