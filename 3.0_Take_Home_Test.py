@@ -38,25 +38,33 @@ print(a)
 side and then print the area of the square
 '''
 side = int(input("What's the length of the square's side? \n"))
-print("The area is", ())
+print("The area is", (side**2))
 
 '''7. Ask a user for the length of radii of an ellipse and then print its area. 
 Area=pi*a*b where a and b are the lengths of the major radii.
 '''
-
-
+a = float(input("What is the first length of the ellipse? \n"))
+b = float(input("What is the second length of the ellipse? \n"))
+print("The area of the ellipse is", (3.14*a*b))
 
 '''
 8. Ask a user for moles, volume and temperature of a gas and print out the pressure. PV=nRT where n is the number of moles, T is the absolute temperature, V is the
 volume, and R is the gas constant 8.3144.
 '''
-
+n = int(input("What's are the moles?"))
+t = int(input("What's the absolute temperature?"))
+v = int(input("What's the volume?"))
+print((n*8.3144*t)/v)
 '''
 9. Ask a user for an integer and then print the square root.
 '''
-
-
+import math
+root=int(input("Enter a number: \n"))
+print(math.sqrt(root))
 '''
 10. Good Star Wars joke: "May the mass times acceleration be with you!" because F=ma. Ask the user for mass and acceleration
 and then print out the Force on one line and "Get it?" on the next.
 '''
+mass=float(input("What is the mass? \n"))
+acceleration=float(input("What is the acceleration \n"))
+print(mass*acceleration, ("\nGet it?"))
